@@ -4,16 +4,12 @@ import doc from './doc';
 import config from 'config';
 import metric from 'metric';
 
-console.log(doc);
-console.log(config);
-console.log(typeof metric);
-
 if (typeof metric === 'function') {
-    metric({});
+  config = config || {};
+  metric(config);
 }
 
-console.log(foo);
-
 export default function () {
+  console.log(foo);
   console.log('current version is ' + version);
 }
