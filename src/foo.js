@@ -1,4 +1,5 @@
-import w from 'window';
+import doc from './doc';
 
-console.log(w.setTimeout);
+console.log(doc);
+
 export default 42;

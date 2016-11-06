@@ -1,8 +1,8 @@
 import { version } from '../package.json';
 import foo from './foo';
-import w from 'window';
+import doc from './doc';
 
-console.log(w.setTimeout);
+console.log(doc);
 
 console.log(foo);
 
