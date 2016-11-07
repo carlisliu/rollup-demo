@@ -2,7 +2,6 @@ import json from 'rollup-plugin-json';
 
 function metric(ty_rum) {
     ty_rum.server = {};
-    //ty_rum.agent = {};
 }
 
 export default {
