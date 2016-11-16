@@ -23,6 +23,6 @@ export default {
     skip: ['global', 'config', 'window']
   }), commonjs()],
   dest: 'dist/bundle.js', // equivalent to --output
-  moduleName: 'TINGYUN',
+  moduleName: 'DEMO',
   interop: false
 };
