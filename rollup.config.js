@@ -2,7 +2,7 @@ import json from 'rollup-plugin-json';
 import nodeResolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 
-function config(ty_rum) {
+function settings(ty_rum) {
   ty_rum.server = {};
   //ty_rum.agent = {};
 }
@@ -13,14 +13,13 @@ export default {
   format: 'iife',
   globals: {
     window: 'window',
-    global: '{server: "192.168.1.1"}',
-    config: config.toString()
+    global: settings.toString
   },
   plugins: [json(), nodeResolve({
     jsnext: true,
     main: true,
     browser: true,
-    skip: ['global', 'config', 'window']
+    skip: ['global', 'window']
   }), commonjs()],
   dest: 'dist/bundle.js', // equivalent to --output
   moduleName: 'DEMO',
