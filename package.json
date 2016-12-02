@@ -21,6 +21,11 @@
   },
   "homepage": "https://github.com/carlisliu/rollup-demo#readme",
   "devDependencies": {
-    "rollup-plugin-json": "^2.0.2"
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-json": "^2.0.2",
+    "rollup-plugin-node-resolve": "^2.0.0"
+  },
+  "dependencies": {
+    "tingyun-browser-util": "^1.0.19"
   }
 }
